@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3A244F419D293A2C91AD38 /* Pods_JoinBoardGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC54D3C5C58DCA0CA72B4BC /* Pods_JoinBoardGame.framework */; };
+		FB0D854821246F3F00F197C5 /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D854721246F3F00F197C5 /* NewChatViewController.swift */; };
+		FB0D854A2126032900F197C5 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D85492126032900F197C5 /* mainTabBarViewController.swift */; };
+		FB1889E521142B5900493E96 /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1889E421142B5900493E96 /* GroupDetailViewController.swift */; };
+		FB1889F0211598C100493E96 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1889EF211598C100493E96 /* MapKitViewController.swift */; };
+		FB3C3B472119293E009CFE70 /* NewGameIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3B462119293E009CFE70 /* NewGameIntroductionViewController.swift */; };
+		FB3C3B95211B36E8009CFE70 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3B94211B36E8009CFE70 /* ChatsViewController.swift */; };
+		FB3C3B97211B53C2009CFE70 /* ChatsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3B96211B53C2009CFE70 /* ChatsTestViewController.swift */; };
+		FB3C3BA2211D734C009CFE70 /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3BA1211D734C009CFE70 /* Chats.swift */; };
+		FB3C3BA421207817009CFE70 /* UsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3BA321207817009CFE70 /* UsersCollectionViewController.swift */; };
+		FB3C3BA6212079F8009CFE70 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C3BA5212079F8009CFE70 /* UsersCollectionViewCell.swift */; };
+		FB6335F620F4DCAE007FEF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6335F520F4DCAE007FEF3A /* AppDelegate.swift */; };
+		FB6335FB20F4DCAE007FEF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6335F920F4DCAE007FEF3A /* Main.storyboard */; };
+		FB6335FD20F4DCB0007FEF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6335FC20F4DCB0007FEF3A /* Assets.xcassets */; };
+		FB63360020F4DCB0007FEF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6335FE20F4DCB0007FEF3A /* LaunchScreen.storyboard */; };
+		FB63360820F4E10D007FEF3A /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63360720F4E10D007FEF3A /* LineButton.swift */; };
+		FB63360D20F4EF22007FEF3A /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63360C20F4EF22007FEF3A /* UITextField+Placeholder.swift */; };
+		FB63361120F4EF76007FEF3A /* IndexPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361020F4EF76007FEF3A /* IndexPageViewController.swift */; };
+		FB63361320F4EFD1007FEF3A /* GroupStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361220F4EFD1007FEF3A /* GroupStartedViewController.swift */; };
+		FB63361520F4EFED007FEF3A /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361420F4EFED007FEF3A /* ChatRoomViewController.swift */; };
+		FB63361720F4F007007FEF3A /* GameIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361620F4F007007FEF3A /* GameIntroductionViewController.swift */; };
+		FB63361920F4F020007FEF3A /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361820F4F020007FEF3A /* MembersViewController.swift */; };
+		FB63361B20F4F064007FEF3A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361A20F4F064007FEF3A /* WelcomeViewController.swift */; };
+		FB63361D20F4F081007FEF3A /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361C20F4F081007FEF3A /* SingUpViewController.swift */; };
+		FB63361F20F4F0A2007FEF3A /* MailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63361E20F4F0A2007FEF3A /* MailLoginViewController.swift */; };
+		FB63362120F4F0B5007FEF3A /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63362020F4F0B5007FEF3A /* ResetPasswordViewController.swift */; };
+		FB63362320F4F1C7007FEF3A /* MemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63362220F4F1C7007FEF3A /* MemberInfoViewController.swift */; };
+		FB63362520F4FB3B007FEF3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB63362420F4FB3A007FEF3A /* GoogleService-Info.plist */; };
+		FB63362820F5145D007FEF3A /* JsonSlave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63362620F5145D007FEF3A /* JsonSlave.swift */; };
+		FB63362920F5145D007FEF3A /* JsonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63362720F5145D007FEF3A /* JsonValue.swift */; };
+		FBABE5BF21268366009C3C68 /* Groups_Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5BE21268366009C3C68 /* Groups_Simple.swift */; };
+		FBABE5C12126D3D9009C3C68 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5C02126D3D9009C3C68 /* CacheManager.swift */; };
+		FBABE5C32126D4AF009C3C68 /* GroupNewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5C22126D4AF009C3C68 /* GroupNewTableViewCell.swift */; };
+		FBABE5C52126D5AC009C3C68 /* GroupNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5C42126D5AC009C3C68 /* GroupNewViewController.swift */; };
+		FBABE5CB21274167009C3C68 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5CA21274167009C3C68 /* Groups.swift */; };
+		FBABE5CD212A8831009C3C68 /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABE5CC212A8831009C3C68 /* GroupChatViewController.swift */; };
+		FBCAC0D420F74B0D000A8DDF /* TextFiledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAC0D320F74B0D000A8DDF /* TextFiledViewController.swift */; };
+		FBCAC0DB20F8FAD8000A8DDF /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAC0DA20F8FAD8000A8DDF /* UIImage+Scale.swift */; };
+		FBCAC0E120FB892E000A8DDF /* Userinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAC0E020FB892E000A8DDF /* Userinfo.swift */; };
+		FBFA43CA20FD09A200971476 /* ModifyUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA43C920FD09A200971476 /* ModifyUserInfoViewController.swift */; };
+		FBFA446E21025D0F00971476 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA446D21025D0F00971476 /* GameInfo.swift */; };
+		FBFA4551210AE04F00971476 /* FireBaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA4550210AE04F00971476 /* FireBaseFactory.swift */; };
+		FBFA4555210F45FB00971476 /* GroupStartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA4554210F45FB00971476 /* GroupStartTableViewCell.swift */; };
+		FBFA4557210F4F7E00971476 /* GroupSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA4556210F4F7E00971476 /* GroupSimple.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CCC54D3C5C58DCA0CA72B4BC /* Pods_JoinBoardGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoinBoardGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A51A31F4699F7FDABFBF82 /* Pods-JoinBoardGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinBoardGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame.release.xcconfig"; sourceTree = "<group>"; };
+		E834353228763C97D4A51041 /* Pods-JoinBoardGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinBoardGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0D854721246F3F00F197C5 /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		FB0D85492126032900F197C5 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
+		FB1889E421142B5900493E96 /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
+		FB1889EF211598C100493E96 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		FB3C3B462119293E009CFE70 /* NewGameIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameIntroductionViewController.swift; sourceTree = "<group>"; };
+		FB3C3B93211B34D5009CFE70 /* JSQMessageBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSQMessageBridging-Header.h"; sourceTree = "<group>"; };
+		FB3C3B94211B36E8009CFE70 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		FB3C3B96211B53C2009CFE70 /* ChatsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTestViewController.swift; sourceTree = "<group>"; };
+		FB3C3BA1211D734C009CFE70 /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
+		FB3C3BA321207817009CFE70 /* UsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewController.swift; sourceTree = "<group>"; };
+		FB3C3BA5212079F8009CFE70 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB6335F220F4DCAE007FEF3A /* JoinBoardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoinBoardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6335F520F4DCAE007FEF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB6335FA20F4DCAE007FEF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB6335FC20F4DCB0007FEF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB6335FF20F4DCB0007FEF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB63360120F4DCB0007FEF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB63360720F4E10D007FEF3A /* LineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		FB63360C20F4EF22007FEF3A /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
+		FB63361020F4EF76007FEF3A /* IndexPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPageViewController.swift; sourceTree = "<group>"; };
+		FB63361220F4EFD1007FEF3A /* GroupStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStartedViewController.swift; sourceTree = "<group>"; };
+		FB63361420F4EFED007FEF3A /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		FB63361620F4F007007FEF3A /* GameIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameIntroductionViewController.swift; sourceTree = "<group>"; };
+		FB63361820F4F020007FEF3A /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		FB63361A20F4F064007FEF3A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FB63361C20F4F081007FEF3A /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		FB63361E20F4F0A2007FEF3A /* MailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLoginViewController.swift; sourceTree = "<group>"; };
+		FB63362020F4F0B5007FEF3A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		FB63362220F4F1C7007FEF3A /* MemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoViewController.swift; sourceTree = "<group>"; };
+		FB63362420F4FB3A007FEF3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB63362620F5145D007FEF3A /* JsonSlave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSlave.swift; sourceTree = "<group>"; };
+		FB63362720F5145D007FEF3A /* JsonValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonValue.swift; sourceTree = "<group>"; };
+		FBABE5BE21268366009C3C68 /* Groups_Simple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups_Simple.swift; sourceTree = "<group>"; };
+		FBABE5C02126D3D9009C3C68 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		FBABE5C22126D4AF009C3C68 /* GroupNewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupNewTableViewCell.swift; sourceTree = "<group>"; };
+		FBABE5C42126D5AC009C3C68 /* GroupNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupNewViewController.swift; sourceTree = "<group>"; };
+		FBABE5CA21274167009C3C68 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		FBABE5CC212A8831009C3C68 /* GroupChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
+		FBCAC0D320F74B0D000A8DDF /* TextFiledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFiledViewController.swift; sourceTree = "<group>"; };
+		FBCAC0DA20F8FAD8000A8DDF /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		FBCAC0E020FB892E000A8DDF /* Userinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userinfo.swift; sourceTree = "<group>"; };
+		FBFA43C920FD09A200971476 /* ModifyUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyUserInfoViewController.swift; sourceTree = "<group>"; };
+		FBFA446D21025D0F00971476 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		FBFA4550210AE04F00971476 /* FireBaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseFactory.swift; sourceTree = "<group>"; };
+		FBFA4554210F45FB00971476 /* GroupStartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStartTableViewCell.swift; sourceTree = "<group>"; };
+		FBFA4556210F4F7E00971476 /* GroupSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSimple.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB6335EF20F4DCAE007FEF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3A244F419D293A2C91AD38 /* Pods_JoinBoardGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ECED58008C8A07F6AD1E1D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC54D3C5C58DCA0CA72B4BC /* Pods_JoinBoardGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6700E9D005C253F48A08CB6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E834353228763C97D4A51041 /* Pods-JoinBoardGame.debug.xcconfig */,
+				E4A51A31F4699F7FDABFBF82 /* Pods-JoinBoardGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB6335E920F4DCAE007FEF3A = {
+			isa = PBXGroup;
+			children = (
+				FB63362420F4FB3A007FEF3A /* GoogleService-Info.plist */,
+				FB6335F420F4DCAE007FEF3A /* JoinBoardGame */,
+				6700E9D005C253F48A08CB6C /* Pods */,
+				2ECED58008C8A07F6AD1E1D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB6335F320F4DCAE007FEF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB6335F220F4DCAE007FEF3A /* JoinBoardGame.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FB6335F420F4DCAE007FEF3A /* JoinBoardGame */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C3B93211B34D5009CFE70 /* JSQMessageBridging-Header.h */,
+				FB6335F520F4DCAE007FEF3A /* AppDelegate.swift */,
+				FBCAC0D520F8D5FA000A8DDF /* Unit */,
+				FB63360A20F4E11A007FEF3A /* Model */,
+				FB63360920F4E112007FEF3A /* View */,
+				FB63360B20F4E122007FEF3A /* Controller */,
+				FB6335F920F4DCAE007FEF3A /* Main.storyboard */,
+				FB63360120F4DCB0007FEF3A /* Info.plist */,
+				FB6335FC20F4DCB0007FEF3A /* Assets.xcassets */,
+				FB6335FE20F4DCB0007FEF3A /* LaunchScreen.storyboard */,
+				FB6335F320F4DCAE007FEF3A /* Products */,
+			);
+			path = JoinBoardGame;
+			sourceTree = "<group>";
+		};
+		FB63360920F4E112007FEF3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB63360C20F4EF22007FEF3A /* UITextField+Placeholder.swift */,
+				FB63360720F4E10D007FEF3A /* LineButton.swift */,
+				FBFA4554210F45FB00971476 /* GroupStartTableViewCell.swift */,
+				FB3C3BA5212079F8009CFE70 /* UsersCollectionViewCell.swift */,
+				FB0D85492126032900F197C5 /* mainTabBarViewController.swift */,
+				FBABE5C22126D4AF009C3C68 /* GroupNewTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB63360A20F4E11A007FEF3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB63362620F5145D007FEF3A /* JsonSlave.swift */,
+				FB63362720F5145D007FEF3A /* JsonValue.swift */,
+				FBCAC0D320F74B0D000A8DDF /* TextFiledViewController.swift */,
+				FBCAC0E020FB892E000A8DDF /* Userinfo.swift */,
+				FBFA446D21025D0F00971476 /* GameInfo.swift */,
+				FBFA4550210AE04F00971476 /* FireBaseFactory.swift */,
+				FBFA4556210F4F7E00971476 /* GroupSimple.swift */,
+				FB3C3BA1211D734C009CFE70 /* Chats.swift */,
+				FBABE5BE21268366009C3C68 /* Groups_Simple.swift */,
+				FBABE5C02126D3D9009C3C68 /* CacheManager.swift */,
+				FBABE5CA21274167009C3C68 /* Groups.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB63360B20F4E122007FEF3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB1889EF211598C100493E96 /* MapKitViewController.swift */,
+				FB1889E421142B5900493E96 /* GroupDetailViewController.swift */,
+				FB63361020F4EF76007FEF3A /* IndexPageViewController.swift */,
+				FB63361220F4EFD1007FEF3A /* GroupStartedViewController.swift */,
+				FB63361620F4F007007FEF3A /* GameIntroductionViewController.swift */,
+				FB63361820F4F020007FEF3A /* MembersViewController.swift */,
+				FB63361A20F4F064007FEF3A /* WelcomeViewController.swift */,
+				FB63361C20F4F081007FEF3A /* SingUpViewController.swift */,
+				FB63361E20F4F0A2007FEF3A /* MailLoginViewController.swift */,
+				FB63362020F4F0B5007FEF3A /* ResetPasswordViewController.swift */,
+				FBFA43C920FD09A200971476 /* ModifyUserInfoViewController.swift */,
+				FB63362220F4F1C7007FEF3A /* MemberInfoViewController.swift */,
+				FB3C3B462119293E009CFE70 /* NewGameIntroductionViewController.swift */,
+				FB3C3B94211B36E8009CFE70 /* ChatsViewController.swift */,
+				FB3C3B96211B53C2009CFE70 /* ChatsTestViewController.swift */,
+				FB63361420F4EFED007FEF3A /* ChatRoomViewController.swift */,
+				FB3C3BA321207817009CFE70 /* UsersCollectionViewController.swift */,
+				FB0D854721246F3F00F197C5 /* NewChatViewController.swift */,
+				FBABE5C42126D5AC009C3C68 /* GroupNewViewController.swift */,
+				FBABE5CC212A8831009C3C68 /* GroupChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBCAC0D520F8D5FA000A8DDF /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAC0DA20F8FAD8000A8DDF /* UIImage+Scale.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB6335F120F4DCAE007FEF3A /* JoinBoardGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB63360420F4DCB0007FEF3A /* Build configuration list for PBXNativeTarget "JoinBoardGame" */;
+			buildPhases = (
+				D579BC5387D3575D82DEF87C /* [CP] Check Pods Manifest.lock */,
+				FB6335EE20F4DCAE007FEF3A /* Sources */,
+				FB6335EF20F4DCAE007FEF3A /* Frameworks */,
+				FB6335F020F4DCAE007FEF3A /* Resources */,
+				993D96A2967922876D76C996 /* [CP] Embed Pods Frameworks */,
+				EE80650DC2C7BE770C5ED57E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoinBoardGame;
+			productName = JoinBoardGame;
+			productReference = FB6335F220F4DCAE007FEF3A /* JoinBoardGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB6335EA20F4DCAE007FEF3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = fileice;
+				TargetAttributes = {
+					FB6335F120F4DCAE007FEF3A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FB6335ED20F4DCAE007FEF3A /* Build configuration list for PBXProject "JoinBoardGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB6335E920F4DCAE007FEF3A;
+			productRefGroup = FB6335F320F4DCAE007FEF3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB6335F120F4DCAE007FEF3A /* JoinBoardGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB6335F020F4DCAE007FEF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB63360020F4DCB0007FEF3A /* LaunchScreen.storyboard in Resources */,
+				FB63362520F4FB3B007FEF3A /* GoogleService-Info.plist in Resources */,
+				FB6335FD20F4DCB0007FEF3A /* Assets.xcassets in Resources */,
+				FB6335FB20F4DCAE007FEF3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		993D96A2967922876D76C996 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D579BC5387D3575D82DEF87C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoinBoardGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE80650DC2C7BE770C5ED57E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoinBoardGame/Pods-JoinBoardGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB6335EE20F4DCAE007FEF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAC0E120FB892E000A8DDF /* Userinfo.swift in Sources */,
+				FBFA4557210F4F7E00971476 /* GroupSimple.swift in Sources */,
+				FBCAC0D420F74B0D000A8DDF /* TextFiledViewController.swift in Sources */,
+				FB63361B20F4F064007FEF3A /* WelcomeViewController.swift in Sources */,
+				FB63361920F4F020007FEF3A /* MembersViewController.swift in Sources */,
+				FB3C3B472119293E009CFE70 /* NewGameIntroductionViewController.swift in Sources */,
+				FBABE5C12126D3D9009C3C68 /* CacheManager.swift in Sources */,
+				FB63361720F4F007007FEF3A /* GameIntroductionViewController.swift in Sources */,
+				FB1889F0211598C100493E96 /* MapKitViewController.swift in Sources */,
+				FB0D854A2126032900F197C5 /* mainTabBarViewController.swift in Sources */,
+				FB63362920F5145D007FEF3A /* JsonValue.swift in Sources */,
+				FB63361120F4EF76007FEF3A /* IndexPageViewController.swift in Sources */,
+				FBABE5C52126D5AC009C3C68 /* GroupNewViewController.swift in Sources */,
+				FBABE5CB21274167009C3C68 /* Groups.swift in Sources */,
+				FBCAC0DB20F8FAD8000A8DDF /* UIImage+Scale.swift in Sources */,
+				FB1889E521142B5900493E96 /* GroupDetailViewController.swift in Sources */,
+				FB63361520F4EFED007FEF3A /* ChatRoomViewController.swift in Sources */,
+				FBFA4555210F45FB00971476 /* GroupStartTableViewCell.swift in Sources */,
+				FB63361320F4EFD1007FEF3A /* GroupStartedViewController.swift in Sources */,
+				FB63360D20F4EF22007FEF3A /* UITextField+Placeholder.swift in Sources */,
+				FB3C3B95211B36E8009CFE70 /* ChatsViewController.swift in Sources */,
+				FB3C3BA421207817009CFE70 /* UsersCollectionViewController.swift in Sources */,
+				FBFA446E21025D0F00971476 /* GameInfo.swift in Sources */,
+				FB3C3B97211B53C2009CFE70 /* ChatsTestViewController.swift in Sources */,
+				FB3C3BA2211D734C009CFE70 /* Chats.swift in Sources */,
+				FB3C3BA6212079F8009CFE70 /* UsersCollectionViewCell.swift in Sources */,
+				FBABE5C32126D4AF009C3C68 /* GroupNewTableViewCell.swift in Sources */,
+				FB63361F20F4F0A2007FEF3A /* MailLoginViewController.swift in Sources */,
+				FB6335F620F4DCAE007FEF3A /* AppDelegate.swift in Sources */,
+				FB63362820F5145D007FEF3A /* JsonSlave.swift in Sources */,
+				FB63361D20F4F081007FEF3A /* SingUpViewController.swift in Sources */,
+				FBFA4551210AE04F00971476 /* FireBaseFactory.swift in Sources */,
+				FBABE5CD212A8831009C3C68 /* GroupChatViewController.swift in Sources */,
+				FB63360820F4E10D007FEF3A /* LineButton.swift in Sources */,
+				FBABE5BF21268366009C3C68 /* Groups_Simple.swift in Sources */,
+				FB63362320F4F1C7007FEF3A /* MemberInfoViewController.swift in Sources */,
+				FBFA43CA20FD09A200971476 /* ModifyUserInfoViewController.swift in Sources */,
+				FB63362120F4F0B5007FEF3A /* ResetPasswordViewController.swift in Sources */,
+				FB0D854821246F3F00F197C5 /* NewChatViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB6335F920F4DCAE007FEF3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6335FA20F4DCAE007FEF3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB6335FE20F4DCB0007FEF3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6335FF20F4DCB0007FEF3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB63360220F4DCB0007FEF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB63360320F4DCB0007FEF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB63360520F4DCB0007FEF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E834353228763C97D4A51041 /* Pods-JoinBoardGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 642EYAMT8J;
+				INFOPLIST_FILE = JoinBoardGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fileice.www.JoinBoardGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JoinBoardGame/JSQMessageBridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB63360620F4DCB0007FEF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A51A31F4699F7FDABFBF82 /* Pods-JoinBoardGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 642EYAMT8J;
+				INFOPLIST_FILE = JoinBoardGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fileice.www.JoinBoardGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JoinBoardGame/JSQMessageBridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB6335ED20F4DCAE007FEF3A /* Build configuration list for PBXProject "JoinBoardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB63360220F4DCB0007FEF3A /* Debug */,
+				FB63360320F4DCB0007FEF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB63360420F4DCB0007FEF3A /* Build configuration list for PBXNativeTarget "JoinBoardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB63360520F4DCB0007FEF3A /* Debug */,
+				FB63360620F4DCB0007FEF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB6335EA20F4DCAE007FEF3A /* Project object */;
+}
